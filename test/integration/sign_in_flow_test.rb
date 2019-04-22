@@ -17,7 +17,9 @@ class SignInFlowTest < ActionDispatch::IntegrationTest
 
   def sign_out
     visit '/'
-    within("div#above-header") do
+    # helpy theme has above-header.
+    # other themes have nav#menu
+    within("div#above-header, nav#menu") do
       click_on("Logout")
     end
   end
