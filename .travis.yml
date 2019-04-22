@@ -2,6 +2,12 @@ language: ruby
 rvm:
   - 2.4.6
   - 2.5.3
+env:
+  - HELPY_THEME=helpy
+  - HELPY_THEME=flat
+  - HELPY_THEME=light
+  - HELPY_THEME=nordic
+  - HELPY_THEME=singular
 
 services:
   - postgresql
